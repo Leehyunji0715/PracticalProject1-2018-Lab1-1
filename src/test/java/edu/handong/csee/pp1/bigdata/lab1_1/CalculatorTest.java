@@ -35,13 +35,13 @@ public class CalculatorTest {
 	@Test
 	public void testMultiply() {
 		Calculator myCalc = new Calculator();
-		assertEquals(myCalc.multiply(3, 3),9);
+		assertEquals(myCalc.multiply(2, 3),6);
 	}
 	
 	@Test
 	public void testDivide() {
 		Calculator myCalc = new Calculator();
 		assertEquals(myCalc.divide(1, 1),1, 0.00000001);
-		assertEquals(myCalc.divide(2, 0),Double.NaN, 0.00000001);
+		assertEquals(myCalc.divide(2, 0),(int)Double.NaN, 0.00000001);
 	}
 }

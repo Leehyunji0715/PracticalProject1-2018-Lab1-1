@@ -19,21 +19,8 @@ package edu.handong.csee.pp1.bigdata.lab1_1;
  *
  */
 public class Calculator {
-
-	// An object has data and actions
-	// Object data are any variables/constants in this area
-	// (in 'class' definition but not in method definitions.)
-	// We call all variables defined in this area as member variables or fields.
-
-	// static decides how this variable can be accessed and maintained.
-	// Static variables are shared by all objects crated by this class definition.
 	static int countForAnyCompution = 0;
-	// private member variable is used by only one object can can't be shared by other objects
-	//
-
 	private int localCount = 0;
-
-
 	/**
 	 * This is a main method, which is a special method where is the starting point of a program execution.
 	 * This method is not an actual action of this object but just for starting our program.
@@ -103,7 +90,7 @@ public class Calculator {
 		countForAnyCompution++;
 		localCount++;
 		if (second==0) {
-			return 0;
+			return (int) Double.NaN;
 		}
 		return first / second;
 	}
