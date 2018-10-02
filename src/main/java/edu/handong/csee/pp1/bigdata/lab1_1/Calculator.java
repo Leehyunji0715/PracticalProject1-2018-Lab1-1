@@ -102,6 +102,9 @@ public class Calculator {
 	int divide(int first, int second) {
 		countForAnyCompution++;
 		localCount++;
+		if (second==0) {
+			return 0;
+		}
 		return first / second;
 	}
 
