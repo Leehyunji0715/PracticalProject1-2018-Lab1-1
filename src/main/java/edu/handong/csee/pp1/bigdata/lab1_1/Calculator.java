@@ -61,11 +61,11 @@ public class Calculator {
 	
 	/**
 	 * @param prefix
-	 * @param result
+	 * @param d
 	 * This method prints out computation result.
 	 */
-	void print(String prefix, int result) {
-		System.out.println(prefix + " " + result);
+	void print(String prefix, double d) {
+		System.out.println(prefix + " " + d);
 	}
 
 	int sum(int first, int second) {
@@ -86,11 +86,11 @@ public class Calculator {
 		return first * second;
 	}
 
-	int divide(int first, int second) {
+	double divide(int first, int second) {
 		countForAnyCompution++;
 		localCount++;
 		if (second==0) {  
-			return (int) Double.NaN;
+			return Double.NaN;
 		}
 		return first / second;
 	}
